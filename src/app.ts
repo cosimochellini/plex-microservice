@@ -1,9 +1,9 @@
 import * as express from 'express';
 
-export const expressApp = express();
+export const app = express();
 
 /* istanbul ignore next */
-expressApp.get('/', (req, res) => {
+app.get('/', (req, res) => {
   const value = req.query.value;
 
   const response: HelloWorldResponse = { message: 'Hello World!' + value };
@@ -15,12 +15,15 @@ expressApp.get('/', (req, res) => {
 *
 * @param port The port to listen to.
 */
-export function start(port = 3000) {
-  expressApp.listen(port, (err: any) => {
+export function start() {
+  const port = process.env.PORT || '5000';
+
+  app.listen(port, (err: any) => {
     if (err) {
       console.error(`Unable to start app. Found error: ${err.message}`);
       return;
     }
     console.info(`Example app listening on port ${port}!`);
+    return;
   });
 }

@@ -1,0 +1,1 @@
+web: ts-node --transpile-only -r tsconfig-paths/register src/server.ts 
