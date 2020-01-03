@@ -1,7 +1,9 @@
 import * as cors from 'cors';
 import * as express from 'express';
 
-export const app = express(cors());
+export const app = express();
+
+app.use(cors());
 
 /* istanbul ignore next */
 app.get('/', (req, res) => {
