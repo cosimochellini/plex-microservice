@@ -11,6 +11,9 @@
     "start": "ts-node --transpile-only -r tsconfig-paths/register src/server.ts",
     "test": "jest --coverage"
   },
+  "engines": {
+    "npm": "10.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/minddocdev/typescript-node-starter.git"
