@@ -1,5 +1,6 @@
 # MindDoc's TypeScript Node Starter
 A Node.js + Express + TypeScript skeleton.
+[![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)]
 
 See the [Powering your Back-End applications with TypeScript](https://slides.com/darioblanco/powering-your-back-end-applications-with-typescript) presentation.
 
