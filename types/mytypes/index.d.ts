@@ -2,3 +2,8 @@
 interface HelloWorldResponse {
   message: string;
 }
+
+interface ManagerUser {
+  name: string
+  pin: number
+}

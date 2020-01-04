@@ -1,25 +1,13 @@
-import * as cors from 'cors';
-import * as express from 'express';
+import { app, port } from '@/services/express.service';
 
-export const app = express();
-
-app.use(cors());
-
-/* istanbul ignore next */
-app.get('/', (req, res) => {
+app.get('/v1/', (req, res) => {
   const value = req.query.value;
 
-  const response: HelloWorldResponse = { message: 'Hello World!' + value };
+  const response: HelloWorldResponse = { message: 'Hello World! 2' + value };
   res.send(response);
 });
 
-/**
-* Start the express application.
-*
-* @param port The port to listen to.
-*/
-export function start() {
-  const port = process.env.PORT || '5000';
+const start = () => {
 
   app.listen(port, (err: any) => {
     if (err) {
@@ -29,4 +17,9 @@ export function start() {
     console.info(`Example app listening on port ${port}!`);
     return;
   });
+}
+
+export {
+  app,
+  start
 }
