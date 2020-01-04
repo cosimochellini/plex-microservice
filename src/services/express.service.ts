@@ -7,4 +7,4 @@ app.use(cors());
 
 const port: string = process.env.PORT || '5000';
 
-export { app, port }
+export { app, port };

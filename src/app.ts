@@ -1,11 +1,7 @@
 import { app, port } from '@/services/express.service';
+import { getMediaContent } from '@/controllers/v1/plex.controller';
 
-app.get('/v1/', (req, res) => {
-  const value = req.query.value;
-
-  const response: HelloWorldResponse = { message: 'Hello World! 2' + value };
-  res.send(response);
-});
+app.get('/v1/', getMediaContent);
 
 const start = () => {
 
@@ -17,9 +13,9 @@ const start = () => {
     console.info(`Example app listening on port ${port}!`);
     return;
   });
-}
+};
 
 export {
   app,
-  start
-}
+  start,
+};
