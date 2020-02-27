@@ -45,7 +45,7 @@
     "express": "^4.16.4",
     "plex-api": "^5.3.1",
     "plex-api-credentials": "^3.0.1",
-    "ts-node": "^8.0.3",
+    "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.8.0",
     "typescript": "^3.4.3"
   }
