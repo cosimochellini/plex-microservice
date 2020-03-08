@@ -1,7 +1,7 @@
 {
-  "name": "typescript-node-starter",
+  "name": "plex-microservice",
   "version": "1.0.0",
-  "description": "A TypeScript Node skeleton project",
+  "description": "A microservice to sync all the content in a plex library",
   "main": "src/server.ts",
   "scripts": {
     "compile": "tsc",
@@ -13,29 +13,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/minddocdev/typescript-node-starter.git"
+    "url": "git+https://github.com/cosimochellini/plex-microservice.git"
   },
   "keywords": [
     "typescript",
-    "node",
-    "skeleton",
-    "starter"
+    "plex",
+    "microservice",
+    "catalog"
   ],
-  "author": "development@minddoc.com",
+  "author": "cosimo.chellini@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/minddocdev/typescript-node-starter/issues"
+    "url": "https://github.com/cosimochellini/plex-microservice/issues"
   },
-  "homepage": "https://github.com/minddocdev/typescript-node-starter#readme",
+  "homepage": "https://github.com/cosimochellini/plex-microservice#readme",
   "devDependencies": {
     "@types/cors": "^2.8.6",
-    "@types/express": "^4.16.1",
-    "@types/jest": "^24.0.11",
-    "@types/node": "^13.1.4",
-    "jest": "^24.7.1",
-    "ts-jest": "^24.0.2",
+    "@types/express": "^4.17.3",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
     "ts-node-dev": "^1.0.0-pre.32",
-    "tslint": "^5.15.0",
+    "tslint": "^6.0.0",
     "tslint-config-airbnb": "^5.11.1"
   },
   "dependencies": {
@@ -45,8 +45,9 @@
     "express": "^4.16.4",
     "plex-api": "^5.3.1",
     "plex-api-credentials": "^3.0.1",
+    "sort-es": "^0.2.13",
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.8.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3"
   }
 }

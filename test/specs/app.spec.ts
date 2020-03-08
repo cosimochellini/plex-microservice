@@ -1,4 +1,4 @@
-import { expressApp, start } from '@/app';
+import { app, start } from '@/app';
 
 describe('app', () => {
   const consoleInfoSpy = jest.spyOn(console, 'info').mockImplementation();
@@ -10,7 +10,7 @@ describe('app', () => {
   });
 
   test('starts the app without errors', () => {
-    jest.spyOn(expressApp, 'listen').mockImplementationOnce(
+    jest.spyOn(app, 'listen').mockImplementationOnce(
       (_: any, listeningListener: Function | undefined) => {
         listeningListener!(false);
         return 'serverWithoutErrors' as any; // Ignore 'Server' type
@@ -23,7 +23,7 @@ describe('app', () => {
 
   test('starts the app and stops with the error', () => {
     const errorMessage = 'mocked error';
-    jest.spyOn(expressApp, 'listen').mockImplementationOnce(
+    jest.spyOn(app, 'listen').mockImplementationOnce(
       (_: any, listeningListener: Function | undefined) => {
         listeningListener!(new Error(errorMessage));
         return 'serverWithErrors' as any; // Ignore 'Server' type

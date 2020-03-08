@@ -1,4 +1,4 @@
-import { config } from 'dotenv'
+import { config } from 'dotenv';
 import * as PlexAPI from 'plex-api';
 
 config();
