@@ -46,7 +46,7 @@
     "plex-api": "^5.3.1",
     "plex-api-credentials": "^3.0.1",
     "sort-es": "^0.2.13",
-    "ts-node": "^8.6.2",
+    "ts-node": "^8.7.0",
     "tsconfig-paths": "^3.8.0",
     "typescript": "^3.8.3"
   }
