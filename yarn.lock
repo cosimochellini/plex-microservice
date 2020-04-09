@@ -3824,10 +3824,10 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-sort-es@^0.2.13:
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/sort-es/-/sort-es-0.2.13.tgz#9f16b7e455d27059cb6e424d409815ad1542cae1"
-  integrity sha512-U6H7WdxGZzLljMOhHx/2VdFQyH3h9qoKlGXOeApN2ZhD++0CnJxma0rjZloYto0NgxFN1PKmcwe5XVDJ+cDt4Q==
+sort-es@^0.3.2:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/sort-es/-/sort-es-0.3.4.tgz#4bd857aafd54cdc3ffde863ef1e51966da51af38"
+  integrity sha512-IqFjtKLBe6vuoF5qCrJjX0vQTD3F/PNK02gi0BuSurzygTwXNUo0hWKIOlgtIg1uuceo940XLMMkguNefAykwg==
 
 source-map-resolve@^0.5.0:
   version "0.5.3"
