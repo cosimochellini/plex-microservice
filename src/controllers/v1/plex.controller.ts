@@ -6,11 +6,11 @@ import { isAuthorized } from '@/services/auth.service';
 const getMediaContent = async (req: Request, res: Response) => {
   try {
 
-    const { type = 0, auth } = req.query;
+    const { type = 0, auth = '0' } = req.query;
 
     console.info(type, auth);
 
-    if (!isAuthorized(auth)) return res.send(401);
+    if (!isAuthorized(auth.toString())) return res.send(401);
 
     const query: any = await client.query(`/library/sections/${type}/all`);
 
