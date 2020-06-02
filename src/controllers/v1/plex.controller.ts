@@ -1,7 +1,7 @@
 import { byString } from 'sort-es';
 import { Request, Response } from 'express';
 import { client } from '@/services/plex.service';
-import { isAuthorized } from '@/services/auth.service';
+// import { isAuthorized } from '@/services/auth.service';
 
 const getMediaContent = async (req: Request, res: Response) => {
   try {
@@ -10,7 +10,7 @@ const getMediaContent = async (req: Request, res: Response) => {
 
     console.info(type, auth);
 
-    if (!isAuthorized(auth.toString())) return res.send(401);
+    // if (!isAuthorized(auth.toString())) return res.send(401);
 
     const query: any = await client.query(`/library/sections/${type}/all`);
 

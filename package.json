@@ -31,9 +31,9 @@
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.6",
     "@types/jest": "^25.2.3",
-    "@types/node": "^14.0.4",
+    "@types/node": "^14.0.9",
     "jest": "^26.0.1",
-    "ts-jest": "^26.0.0",
+    "ts-jest": "^26.1.0",
     "ts-node-dev": "^1.0.0-pre.32",
     "tslint": "^6.1.2",
     "tslint-config-airbnb": "^5.11.1"
@@ -45,8 +45,8 @@
     "express": "^4.16.4",
     "plex-api": "^5.3.1",
     "plex-api-credentials": "^3.0.1",
-    "sort-es": "^0.6.7",
-    "ts-node": "^8.10.1",
+    "sort-es": "^0.6.8",
+    "ts-node": "^8.10.2",
     "tsconfig-paths": "^3.8.0",
     "typescript": "^3.9.3"
   }
