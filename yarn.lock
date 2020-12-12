@@ -3863,7 +3863,7 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-sort-es@^1.1.5:
+sort-es@^1.1.9:
   version "1.1.9"
   resolved "https://registry.yarnpkg.com/sort-es/-/sort-es-1.1.9.tgz#eaba721077a74ba20a760f3be06411abbdc75934"
   integrity sha512-LaTricNwKKagWEtxjJRi0H93474+2vxndxJqrpp8ipNxpseJfstIcsYiSxNVPa1cBp6dRWhH91huMTSC6lDQIw==
