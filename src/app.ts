@@ -1,8 +1,8 @@
-import { app, port } from "@/services/express.service";
-import { getMediaContent } from "@/controllers/v1/plex.controller";
+import { app, port } from '@/services/express.service';
+import { getMediaContent } from '@/controllers/v1/plex.controller';
 
-app.get("/v1/", getMediaContent);
-app.get("/health", (req, res) => res.send(true));
+app.get('/v1/', getMediaContent);
+app.get('/health', (req, res) => res.send(true));
 
 const start = () => {
   app.listen(port, () => {
