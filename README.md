@@ -6,6 +6,7 @@ See the [Powering your Back-End applications with TypeScript](https://slides.com
 
 The main purpose of this repository is to show an example project setup and workflow for writing Node and Express code in TypeScript. Community contributions and recommendations for improvements are encouraged and will be most welcome.
 
+
 ## Requirements
 
 - [Node.js](https://nodejs.org/en/)
